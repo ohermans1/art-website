@@ -41,7 +41,7 @@ export const ImageDataContextProvider = (props: any) => {
   const handleUpload = (e: any, file: any, title: string, description: string) => {
     console.log("🚀 ~ file: ImageDataContext.tsx:42 ~ handleUpload ~ file", file);
     // Create a new Promise that resolves when the upload is complete
-    return new Promise<void>((resolve, reject) => {
+    return new Promise<void>(async (resolve, reject) => {
       e.preventDefault();
 
       if (!file) {
@@ -58,6 +58,7 @@ export const ImageDataContextProvider = (props: any) => {
 
       const metadata = { customMetadata: { imageTitle: title, imageDescription: description } };
       let storageRef: StorageReference;
+
       storageRef = createRef(file);
       const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 

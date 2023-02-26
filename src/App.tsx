@@ -13,11 +13,13 @@ import Admin from "./pages/Admin";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Nav from "./pages/Nav";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Nav />,
+    errorElement: <Error />,
     children: [
       { path: "/", element: <Home /> },
       { path: "/about", element: <About /> },

@@ -14,20 +14,29 @@
     font-size: 2.2rem;
     font-family: cursive;
     cursor: pointer;
+
+    & a {
+      text-decoration: none;
+      color: $font-color;
+    }
   }
   &__nav-group {
     list-style: none;
     display: flex;
     gap: 3rem;
+
+    & a,
+    & a:visited {
+      text-decoration: none;
+      color: $font-color;
+    }
+
+    & a.active,
+    & a:hover {
+      text-decoration: underline;
+    }
   }
   &__nav-item {
     cursor: pointer;
-  }
-
-  &__link,
-  &__link:active,
-  &__link:visited {
-    text-decoration: none;
-    color: $font-color;
   }
 }
