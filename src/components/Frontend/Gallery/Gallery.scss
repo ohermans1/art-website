@@ -1,0 +1,9 @@
+.gallery {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 20vw);
+  grid-gap: 1.5rem;
+
+  padding: 5rem;
+}

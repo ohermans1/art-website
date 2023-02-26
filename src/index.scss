@@ -1,0 +1,35 @@
+//Variables
+$font-color: #d3d0d2;
+$header-color: #04202d;
+$footer-color: #04202d;
+$background-color: #04202d;
+$highlight-color: #d3d0d2;
+$highlight-color-dark: rgb(116, 102, 242);
+$button-primary-color: #04202d;
+$button-primary-outline: #d3d0d2;
+$button-primary-font: #d3d0d2;
+$button-secondary-color: #d3d0d2;
+$button-secondary-outline: #04202d;
+$button-secondary-font: #04202d;
+$button-disabled: #454545;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  max-width: 100v;
+  color: $font-color;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: $background-color;
+}

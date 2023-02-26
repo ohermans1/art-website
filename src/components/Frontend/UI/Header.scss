@@ -1,0 +1,33 @@
+@import "./../../../index.scss";
+
+.header {
+  height: 6rem;
+  max-width: 100vw;
+  background-color: $header-color;
+  display: flex;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+
+  &__logo {
+    font-size: 2.2rem;
+    font-family: cursive;
+    cursor: pointer;
+  }
+  &__nav-group {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+  }
+  &__nav-item {
+    cursor: pointer;
+  }
+
+  &__link,
+  &__link:active,
+  &__link:visited {
+    text-decoration: none;
+    color: $font-color;
+  }
+}
